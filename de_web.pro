@@ -157,6 +157,7 @@ SOURCES  = authorisation.cpp \
            rest_scenes.cpp \
            rest_info.cpp \
            rest_capabilities.cpp \
+           rest_attributes.cpp \
            rule.cpp \
            upnp.cpp \
            permitJoin.cpp \

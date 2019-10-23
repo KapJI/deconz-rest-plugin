@@ -15144,6 +15144,10 @@ int DeRestPlugin::handleHttpRequest(const QHttpRequestHeader &hdr, QTcpSocket *s
             {
                 ret = d->handleGatewaysApi(req, rsp);
             }
+            else if (path[2] == QLatin1String("attributes"))
+            {
+                ret = d->handleAttributesApi(req, rsp);
+            }
             else
             {
                 resourceExist = false;

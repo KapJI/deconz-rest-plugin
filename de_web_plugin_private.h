@@ -974,6 +974,10 @@ public:
     int handleCapabilitiesApi(const ApiRequest &req, ApiResponse &rsp);
     int getCapabilities(const ApiRequest &req, ApiResponse &rsp);
 
+    // REST API attributes
+    int handleAttributesApi(const ApiRequest &req, ApiResponse &rsp);
+    int writeAttribute(const ApiRequest &req, ApiResponse &rsp);
+
     // REST API common
     QVariantMap errorToMap(int id, const QString &ressource, const QString &description);
 
